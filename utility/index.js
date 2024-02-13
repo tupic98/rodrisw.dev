@@ -1,4 +1,4 @@
-export const noxfolioUtilits = {
+export const utils = {
   animaiton() {
     if (typeof window !== "undefined") {
       window.WOW = require("wowjs");

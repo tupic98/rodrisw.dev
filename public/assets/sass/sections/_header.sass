@@ -19,6 +19,7 @@
         transition: all 500ms ease
     .logo-outer
         flex: none
+        max-width: 200px
         +res-bl(lg)
             display: none
     .logo
@@ -36,7 +37,7 @@
             top: 0
             left: 0
             position: fixed
-            animation: sticky  1s
+            animation: sticky 1s
             background: $lighter-color
             box-shadow: 0px 0px 30px 0px rgba(87, 95, 245, .10)
         .main-menu
@@ -46,13 +47,12 @@
                         +res-ab(lg)
                             +gapTB(padding, 25px)
 
-                            
 .menu-social
     +res-bl(md)
         display: none
     a
         +gapLR(margin, 18px)
-    
+
 .onepage-menu
     display: flex
     margin-left: auto
@@ -90,7 +90,7 @@
         background: $primary-color
         +res-bl(xxl)
             border-radius: 5px
-        
+
 .hero-menu
     +res-bl(md)
         display: none
@@ -98,20 +98,21 @@
         span
             +res-bl(lg)
                 display: none
-    
+
 .nav-outer
     margin-left: auto
     +res-bl(lg)
         width: 100%
- 
+
 /** Header Main Menu **/
 .main-menu
     +res-bl(lg)
         width: 100%
     .mobile-logo
+        max-width: 275px
         margin-right: auto
         +res-bl(sm)
-            max-width: 150px
+            max-width: 200px
     .collapse
         +res-bl(lg)
             overflow: auto
@@ -260,8 +261,7 @@
 .menu-btns
     display: flex
     align-items: center
-            
-            
+
 /* Menu Sidebar */
 .menu-sidebar
     button
@@ -273,7 +273,7 @@
         background: $primary-color
         +res-bl(lg)
             +size(45px)
-  
+
 /** hidden-sidebar *
 .hidden-bar
     position: fixed
@@ -384,8 +384,7 @@
     opacity: 1
     left: 0
     visibility: visible
-    
-        
+
 /* Menu White */
 .main-header.header-white
     position: absolute
@@ -407,14 +406,14 @@
         color: $primary-color
     .menu-sidebar button .icon-bar,
     .main-menu .navbar-toggle .icon-bar
-            background: white
+        background: white
     .language-switcher
         +res-bl(lp)
             display: none
     &.fixed-header
         .header-upper
             background: #17171a
-    
+
 /* Header Style Two */
 .main-header.header-two
     .menu-sidebar

@@ -2,7 +2,7 @@
 /******************** ## Hero Section ******************/
 /*******************************************************/
 .hero-content
-    max-width: 415px
+    max-width: 615px
     .h2
         display: block
         font-weight: 400
@@ -27,7 +27,7 @@
         .read-more
             margin-top: 15px
             text-decoration: underline
-            
+
 .author-image-part
     z-index: 1
     overflow: hidden
@@ -45,13 +45,18 @@
             left: 0
             top: 15%
             +size(300px)
+    .me-portrait
+        max-width: 65%
+        // +res-bt(lg, xl)
+        //     max-width: 275px
+        +res-ab(xl)
+            max-width: 65%
     .progress-shape
         +poRB(0)
         z-index: -1
         width: 100%
         text-align: center
-        
-        
+
 .hero-counter-wrap
     padding: 35px 40px
     border-radius: 16px
@@ -80,7 +85,7 @@
             content: '%+'
     .counter-title
         display: block
-        
+
 /* Hero Area Two */
 .hero-area-two
     .author-image-part
@@ -97,13 +102,13 @@
                 +size(350px)
             +res-bl(xs)
                 +size(300px)
-            
+
     .scroll-down
         z-index: 3
         +poLB(50%, 0)
         max-width: 22%
         transform: translate(-50%, 50%)
-        
+
 .hero-two-content
     span
         display: block

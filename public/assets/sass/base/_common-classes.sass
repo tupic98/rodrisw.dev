@@ -8,7 +8,7 @@
     margin: 0 auto
     overflow: hidden
     min-width: 300px
-    
+
 .container
     +res-ab(xl)
         max-width: $container
@@ -18,7 +18,7 @@
             max-width: 1650px
         &.container-1200
             max-width: 1230px
-        
+
 .container-fluid
     +res-ab(xxl)
         +gapLR(padding, 70px)
@@ -28,27 +28,26 @@
 
 .row
     --bs-gutter-x: 30px
-        
+
 .row-cols-xl-7
     > *
         +res-ab(xl)
             width: 14.2857%
             flex: 0 0 auto
-        
+
 .no-gap
     +colgap(0)
-    
+
 @for $i from 1 through 15
     .gap-#{10 * $i}
         +res-ab(xxl)
             --bs-gutter-x: #{10px * $i}
-    
+
 .col-small
     +res-bl(xs)
         flex: 0 0 100%
         max-width: 100%
-      
-    
+
 /** Section Title style **/
 .section-title
     margin-top: -7px
@@ -69,7 +68,7 @@
         font-size: 18px
         span
             color: $primary-color
-   
+
 /** Button style **/
 .theme-btn,
 a.theme-btn
@@ -93,7 +92,7 @@ a.theme-btn
         margin-left: 10px
     &:hover
         i
-            margin-left: 13px;
+            margin-left: 13px
             margin-right: -3px
     +res-bl(sm)
         padding: 8px 25px
@@ -134,7 +133,7 @@ a.theme-btn
         color: $primary-color
         i
             margin-left: 10px
-                
+
 /* List style one */
 .list-style-one
     li
@@ -160,7 +159,7 @@ a.theme-btn
             width: 48%
             +res-bl(ms)
                 width: 100%
-                
+
 /* List style two */
 .list-style-two
     li
@@ -179,7 +178,6 @@ a.theme-btn
         &:not(:last-child)
             margin-bottom: 25px
 
-        
 /** Social Link One **/
 .social-style-one
     flex-wrap: wrap
@@ -193,7 +191,7 @@ a.theme-btn
         &:hover
             color: $black-color
             background: $primary-color
-    
+
 /** Social Link Two **/
 .social-style-two
     flex-wrap: wrap
@@ -204,20 +202,6 @@ a.theme-btn
         +gapLR(margin, 12px)
         &:hover
             color: $primary-color
-        
-
-/*** Preloader style ** */
-.preloader
-    position: fixed
-    left: 0
-    top: 0
-    width: 100%
-    height: 100%
-    z-index: 9999999
-    background-color: #131313
-    background-repeat: no-repeat
-    background-position: center center
-    background-image: url(../images/preloader.gif)
 
 /* Pagination */    
 .pagination
@@ -239,7 +223,7 @@ a.theme-btn
             .page-link
                 background: transparent
                 color: $primary-color
-        
+
 /* Rating */
 .ratting
     line-height: 1
@@ -249,7 +233,7 @@ a.theme-btn
     i
         margin: 5px
         color: #AB6034
-                
+
 /*** Slick Arrows ***/
 .slick-arrow
     +size(50px)
@@ -264,7 +248,7 @@ a.theme-btn
         color: $black-color
         background: $primary-color
         border-color: $primary-color
-    
+
 .slider-arrows
     button
         &:first-child
@@ -272,8 +256,7 @@ a.theme-btn
             transform: rotate(45deg)
         &:last-child
             transform: rotate(-45deg)
-    
-                
+
 /*** Slick Dots ***/
 .slick-dots
     +flexcenter(center)
@@ -304,7 +287,7 @@ a.theme-btn
             opacity: 1
             &:before
                 +size(21px)
-            
+
 /* Before After none */
 .before-after-none
     &:after,
@@ -326,7 +309,7 @@ a.theme-btn
     border-radius: 5px
     background: $primary-color
     animation: pulse 2s infinite
-  
+
 /* Text White */
 .text-white
     *, a,
@@ -344,7 +327,7 @@ a.theme-btn
             opacity: 0.5
             &:hover
                 opacity: 1
-        
+
 /*Project Filter*/
 .filter-btns-one
     display: flex
@@ -371,7 +354,7 @@ a.theme-btn
             color: $primary-color
             &:after
                 opacity: 1
-        
+
 .bg-lines
     span
         top: 0
@@ -383,23 +366,23 @@ a.theme-btn
         @for $i from 1 through 9
             &:nth-child(#{$i})
                 left: $i * 10%
-                
+
 /* Position */
 .rel
     position: relative
-    
+
 @for $i from 0 through 5
     .z-#{0 + $i}
         z-index: 0 + $i
-    
+
 .overlay
     +overlay($heading-color, 0.75)
-    
+
 /* Backgruond Size */
 .bgs-cover
     background-size: cover
     background-position: center
-    
+
 /* Color + Background */
 .bgc-black
     background-color: $black-color
@@ -410,12 +393,12 @@ a.theme-btn
 .for-bgc-black
     +container(1620px)
     background: $black-color
-    
+
 /* Border Radius */
 @for $i from 1 through 6
     .br-#{5 * $i}
         border-radius: 5px * $i
-    
+
 /* Home Two */
 .home-two
     .theme-btn

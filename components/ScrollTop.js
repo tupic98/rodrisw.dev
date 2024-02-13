@@ -1,10 +1,10 @@
 "use client";
-import { noxfolioUtilits } from "@/utility";
+import { utils } from "@/utility";
 import { useEffect } from "react";
 
 const ScrollTop = () => {
   useEffect(() => {
-    noxfolioUtilits.scrollTop();
+    utils.scrollTop();
   }, []);
 
   return (

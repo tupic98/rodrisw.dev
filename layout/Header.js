@@ -1,6 +1,6 @@
 "use client";
 
-import { noxfolioUtilits } from "@/utility";
+import { utils } from "@/utility";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import MultiMenu, { OnePageMenu } from "./Menu";
@@ -20,7 +20,7 @@ export default Header;
 
 const Header1 = ({ onePageMenu }) => {
   useEffect(() => {
-    noxfolioUtilits.stickyNav();
+    utils.stickyNav();
   }, []);
 
   const toggleSidebar = () => {
@@ -108,7 +108,7 @@ const Header1 = ({ onePageMenu }) => {
 
 const Header2 = ({ onePageMenu }) => {
   useEffect(() => {
-    noxfolioUtilits.stickyNav();
+    utils.stickyNav();
   }, []);
 
   const toggleSidebar = () => {

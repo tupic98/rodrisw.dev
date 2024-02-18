@@ -1,6 +1,6 @@
 import BlogSidebar from "@/components/BlogSidebar";
 import PageBanner from "@/components/PageBanner";
-import NoxfolioLayout from "@/layout/NoxfolioLayout";
+import Layout from "@/layout/Layout";
 import Link from "next/link";
 
 export const metadata = {
@@ -9,7 +9,7 @@ export const metadata = {
 
 const BlogPage = () => {
   return (
-    <NoxfolioLayout>
+    <Layout>
       <PageBanner pageName={"Blog Standard"} />
       <section className="blog-standard-area pb-70 rpb-40 pb-130 rpb-100 rel z-1">
         <div className="container">
@@ -312,7 +312,7 @@ const BlogPage = () => {
           <span />
         </div>
       </section>
-    </NoxfolioLayout>
+    </Layout>
   );
 };
 export default BlogPage;

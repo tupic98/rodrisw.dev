@@ -10,7 +10,7 @@ import { Resume2 } from "@/components/Resume";
 import ScrollTop from "@/components/ScrollTop";
 import { Services2 } from "@/components/Services";
 import { Skill2 } from "@/components/Skill";
-import NoxfolioLayout from "@/layout/NoxfolioLayout";
+import Layout from "@/layout/Layout";
 
 export const metadata = {
   title: "Home Two",
@@ -18,7 +18,7 @@ export const metadata = {
 
 const Index2 = () => {
   return (
-    <NoxfolioLayout header={2} footer={2}>
+    <Layout header={2} footer={2}>
       {/*End Hidden Sidebar */}
       {/* Hero Section Start */}
       <Hero2 />
@@ -415,7 +415,7 @@ const Index2 = () => {
       {/* Lets Talk Area end */}
       {/* Scroll Top Button */}
       <ScrollTop />
-    </NoxfolioLayout>
+    </Layout>
   );
 };
 export default Index2;

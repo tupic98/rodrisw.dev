@@ -1,4 +1,4 @@
-import NoxfolioLayout from "@/layout/NoxfolioLayout";
+import Layout from "@/layout/Layout";
 import Link from "next/link";
 
 export const metadata = {
@@ -7,7 +7,7 @@ export const metadata = {
 
 const E404 = () => {
   return (
-    <NoxfolioLayout noFooter={true}>
+    <Layout noFooter={true}>
       <section className="error-area pt-185 rpt-130 pb-130 rpb-100 rel z-1 text-center">
         <div className="container">
           <div className="error-content">
@@ -38,7 +38,7 @@ const E404 = () => {
           <span />
         </div>
       </section>
-    </NoxfolioLayout>
+    </Layout>
   );
 };
 export default E404;

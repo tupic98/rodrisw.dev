@@ -1,5 +1,5 @@
 "use client";
-import { noxfolioSlider } from "@/utility/sliderProps";
+import { customSlider } from "@/utility/sliderProps";
 import { Component } from "react";
 import Slider from "react-slick";
 export default class Testimonial extends Component {
@@ -53,7 +53,7 @@ export default class Testimonial extends Component {
               <div className="col-lg-8">
                 <Slider
                   ref={(c) => (this.slider = c)}
-                  {...noxfolioSlider.testimonials}
+                  {...customSlider.testimonials}
                   className="testimonials-wrap"
                 >
                   <div className="testimonial-item wow fadeInUp delay-0-3s">

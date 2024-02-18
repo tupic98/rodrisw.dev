@@ -1,7 +1,7 @@
 import PageBanner from "@/components/PageBanner";
 import Pricing from "@/components/Pricing";
 import Services from "@/components/Services";
-import NoxfolioLayout from "@/layout/NoxfolioLayout";
+import Layout from "@/layout/Layout";
 import Link from "next/link";
 
 export const metadata = {
@@ -10,7 +10,7 @@ export const metadata = {
 
 const ServicePage = () => {
   return (
-    <NoxfolioLayout>
+    <Layout>
       <PageBanner pageName={"Popular Service"} />
 
       <section className="what-i-do-area pt-25 rpt-0 pb-130 rpb-100 rel z-1">
@@ -81,7 +81,7 @@ const ServicePage = () => {
       <Services extraClass={"bgc-black"} />
       {/* Pricing Area start */}
       <Pricing extraClass={"pb-100"} />
-    </NoxfolioLayout>
+    </Layout>
   );
 };
 export default ServicePage;

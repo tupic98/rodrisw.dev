@@ -5,7 +5,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import SideBar from "./SideBar";
 
-const NoxfolioLayout = ({
+const Layout = ({
   children,
   header,
   footer,
@@ -25,4 +25,4 @@ const NoxfolioLayout = ({
     </div>
   );
 };
-export default NoxfolioLayout;
+export default Layout;

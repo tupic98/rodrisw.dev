@@ -1,5 +1,5 @@
 import PageBanner from "@/components/PageBanner";
-import NoxfolioLayout from "@/layout/NoxfolioLayout";
+import Layout from "@/layout/Layout";
 import Link from "next/link";
 
 import dynamic from "next/dynamic";
@@ -16,7 +16,7 @@ export const metadata = {
 
 const ProjectMasonry = () => {
   return (
-    <NoxfolioLayout>
+    <Layout>
       <PageBanner pageName={"Project Masonry"} />
       <section className="projects-masonry-area pt-40 pb-130 rpb-100 rel z-1">
         <div className="container">
@@ -42,7 +42,7 @@ const ProjectMasonry = () => {
           <span />
         </div>
       </section>
-    </NoxfolioLayout>
+    </Layout>
   );
 };
 export default ProjectMasonry;

@@ -2,9 +2,8 @@ import Link from "next/link";
 import Counter from "./Counter";
 
 const counterData = [
-  { id: 1, text: "Years Of Experience", value: "13", valueType: "plus" },
-  { id: 2, text: "Project Complete", value: "8", valueType: "k-plus" },
-  { id: 3, text: "Client Satisfactions", value: "99", valueType: "percent" },
+  { id: 1, text: "Years Of Experience", value: "4", valueType: "plus" },
+  { id: 2, text: "Project Collaborations", value: "8", valueType: "plus" },
 ];
 
 const Hero = () => {
@@ -18,11 +17,14 @@ const Hero = () => {
               <h1>
                 <b>Rodrigo Alvarenga</b>
                 <br></br>
-                web designer
+                Web Designer
+                <br></br>
+                <div className="display-6">
+                  & Software Developer
+                </div>
               </h1>
               <p>
-                We denounce with righteous indignation dislike demoralized by
-                the charms of pleasure
+                Embark on a journey where dreams materialize into digital wonders. Let's shape the future together and turn your ideas into pixels.
               </p>
               <div className="hero-btns">
                 <Link legacyBehavior href="/contact">
@@ -51,10 +53,10 @@ const Hero = () => {
           <div className="col-lg-5">
             <div className="author-image-part wow fadeIn delay-0-3s">
               <div className="bg-circle" />
-              <img className="me-portrait" src="assets/images/hero/me.png" alt="Author" />
+              <img className="me-portrait" src="assets/images/hero/me.webp" alt="Author" />
               <div className="progress-shape">
                 <img
-                  src="assets/images/hero/progress-shape.png"
+                  src="assets/images/hero/progress-shape-2.png"
                   alt="Progress"
                 />
               </div>

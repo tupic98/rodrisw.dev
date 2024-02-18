@@ -3,7 +3,7 @@ import Faq from "@/components/Faq";
 import PageBanner from "@/components/PageBanner";
 import Services from "@/components/Services";
 import Testimonial from "@/components/Testimonial";
-import NoxfolioLayout from "@/layout/NoxfolioLayout";
+import Layout from "@/layout/Layout";
 import Link from "next/link";
 
 export const metadata = {
@@ -12,7 +12,7 @@ export const metadata = {
 
 const About = () => {
   return (
-    <NoxfolioLayout>
+    <Layout>
       <PageBanner pageName={"About Me"} />
 
       <div className="about-main-image-area pt-40">
@@ -155,7 +155,7 @@ const About = () => {
       {/* Testimonial Area end */}
       {/* Client Log start */}
       <Clients />
-    </NoxfolioLayout>
+    </Layout>
   );
 };
 export default About;

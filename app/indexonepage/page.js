@@ -9,11 +9,11 @@ import Resume from "@/components/Resume";
 import Services from "@/components/Services";
 import Skill from "@/components/Skill";
 import Testimonial from "@/components/Testimonial";
-import NoxfolioLayout from "@/layout/NoxfolioLayout";
+import Layout from "@/layout/Layout";
 
 export default function HomeOnePage() {
   return (
-    <NoxfolioLayout onePageMenu={true}>
+    <Layout onePageMenu={true}>
       {/* Hero Section Start */}
       <Hero />
       {/* Hero Section End */}
@@ -47,6 +47,6 @@ export default function HomeOnePage() {
       {/* Client Log start */}
       <Clients />
       {/* Client Log end */}
-    </NoxfolioLayout>
+    </Layout>
   );
 }

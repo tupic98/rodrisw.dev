@@ -1,5 +1,5 @@
 import PageBanner from "@/components/PageBanner";
-import NoxfolioLayout from "@/layout/NoxfolioLayout";
+import Layout from "@/layout/Layout";
 
 export const metadata = {
   title: "Contact",
@@ -7,8 +7,8 @@ export const metadata = {
 
 const page = () => {
   return (
-    <NoxfolioLayout>
-      <PageBanner pageName={"Contact Us"} />
+    <Layout>
+      <PageBanner pageName={"Contact Me"} />
       {/* Contact Page Area start */}
       <section className="contact-page pt-40 pb-130 rpb-100 rel z-1">
         <div className="container">
@@ -25,25 +25,25 @@ const page = () => {
                     inventore veritatis
                   </p>
                 </div>
-                <h6>Main Office</h6>
+                <h6>Contact Information</h6>
                 <div className="widget_contact_info mb-35">
                   <ul>
                     <li>
-                      <i className="far fa-map-marker-alt" /> 55 Main Street,
-                      2nd block,
-                      <br /> New York City
+                      <i className="far fa-map-marker-alt" /> Riverside,
+                       California
+                      <br />
                     </li>
                     <li>
                       <i className="far fa-envelope" />{" "}
-                      <a href="mailto:support@gmail.com">support@gmail.com</a>
+                      <a href="mailto:raalvarenga@rodrisw.dev">raalvarenga@rodrisw.dev</a>
                     </li>
                     <li>
                       <i className="far fa-phone" />{" "}
-                      <a href="callto:+880(123)45688">+880 (123) 456 88</a>
+                      <a href="callto:+19512617814">+1 (951) 261-7814</a>
                     </li>
                   </ul>
                 </div>
-                <h5>Follow Me</h5>
+                {/* <h5>Follow Me</h5>
                 <div className="social-style-one mt-10">
                   <a href="#">
                     <i className="fab fa-facebook-f" />
@@ -57,7 +57,7 @@ const page = () => {
                   <a href="#">
                     <i className="fab fa-instagram" />
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-lg-8">
@@ -79,7 +79,7 @@ const page = () => {
                           name="name"
                           className="form-control"
                           defaultValue=""
-                          placeholder="Richard D. Hammond"
+                          placeholder="Your Name"
                           required=""
                           data-error="Please enter your Name"
                         />
@@ -98,7 +98,7 @@ const page = () => {
                           name="email"
                           className="form-control"
                           defaultValue=""
-                          placeholder="support@gmail.com"
+                          placeholder="youremail@gmail.com"
                           required=""
                           data-error="Please enter your Email"
                         />
@@ -154,7 +154,7 @@ const page = () => {
                           id="message"
                           className="form-control"
                           rows={4}
-                          placeholder="write message"
+                          placeholder="Write a message, any inquiry or question."
                           required=""
                           data-error="Please enter your Message"
                           defaultValue={""}
@@ -175,19 +175,7 @@ const page = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="bg-lines">
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-        </div>
+        </div> 
       </section>
       {/* Contact Page Area end */}
       {/* Location Map Area Start */}
@@ -195,7 +183,7 @@ const page = () => {
         <div className="container">
           <div className="our-location">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m12!1m10!1m3!1d142190.2862584524!2d-74.01298319978558!3d40.721725351435126!2m1!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sbd!4v1663473911885!5m2!1sen!2sbd"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d34170.02312454348!2d-117.39596863051618!3d33.96307543086162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1707898344605!5m2!1sen!2sus"
               style={{ border: 0, width: "100%" }}
               allowFullScreen=""
               loading="lazy"
@@ -204,7 +192,19 @@ const page = () => {
           </div>
         </div>
       </div>
-    </NoxfolioLayout>
+      <div className="bg-lines">
+          <span />
+          <span />
+          <span />
+          <span />
+          <span />
+          <span />
+          <span />
+          <span />
+          <span />
+          <span />
+        </div>
+    </Layout>
   );
 };
 export default page;

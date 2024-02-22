@@ -138,18 +138,6 @@ const Footer1 = () => {
             <span className="fas fa-angle-double-up" />
           </a>
         </div>
-        <div className="bg-lines">
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-        </div>
       </div>
     </footer>
   );
@@ -179,28 +167,8 @@ export const Footer2 = () => {
             <div className="footer-widget widget_nav_menu me-0 wow fadeInUp delay-0-4s">
               <ul>
                 <li>
-                  <Link legacyBehavior href="services">
-                    Service
-                  </Link>
-                </li>
-                <li>
                   <Link legacyBehavior href="projects">
                     Projects
-                  </Link>
-                </li>
-                <li>
-                  <Link legacyBehavior href="services#pricing">
-                    Pricing
-                  </Link>
-                </li>
-                <li>
-                  <Link legacyBehavior href="about#faqs">
-                    Faqs
-                  </Link>
-                </li>
-                <li>
-                  <Link legacyBehavior href="blog">
-                    News
                   </Link>
                 </li>
                 <li>
@@ -246,16 +214,13 @@ export const Footer2 = () => {
             <div className="col-lg-6 text-lg-end">
               <ul className="footer-bottom-nav">
                 <li>
-                  <a href="#">Facebook</a>
+                  <a href="https://x.com/rodriswdev/" rel="noopener noreferrer" target="_blank">Twitter/X</a>
                 </li>
                 <li>
-                  <a href="#">Twitter</a>
+                  <a href="https://github.com/tupic98" rel="noopener noreferrer" target="_blank">Github</a>
                 </li>
                 <li>
-                  <a href="#">Instagram</a>
-                </li>
-                <li>
-                  <a href="#">LinkedIn</a>
+                  <a href="https://www.linkedin.com/in/rodrigo-alvarenga-928b7a190/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
                 </li>
               </ul>
             </div>

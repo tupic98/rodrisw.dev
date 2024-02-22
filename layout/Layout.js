@@ -10,7 +10,6 @@ const Layout = ({
   header,
   footer,
   noFooter,
-  onePageMenu,
 }) => {
   useEffect(() => {
     utils.animaiton();
@@ -18,7 +17,7 @@ const Layout = ({
 
   return (
     <div className="page-wrapper">
-      <Header header={header} onePageMenu={onePageMenu} />
+      <Header header={header}/>
       <SideBar />
       {children}
       {!noFooter && <Footer footer={footer} />}

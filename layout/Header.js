@@ -3,22 +3,22 @@
 import { utils } from "@/utility";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import MultiMenu, { OnePageMenu } from "./Menu";
+import MultiMenu from "./Menu";
 
-const Header = ({ header, onePageMenu }) => {
+const Header = ({ header }) => {
   switch (header) {
     case 1:
-      return <Header1 onePageMenu={onePageMenu} />;
+      return <Header1 />;
     case 2:
-      return <Header2 onePageMenu={onePageMenu} />;
+      return <Header2 />;
 
     default:
-      return <Header1 onePageMenu={onePageMenu} />;
+      return <Header1 />;
   }
 };
 export default Header;
 
-const Header1 = ({ onePageMenu }) => {
+const Header1 = () => {
   useEffect(() => {
     utils.stickyNav();
   }, []);
@@ -81,7 +81,7 @@ const Header1 = ({ onePageMenu }) => {
                     toggle ? "show" : ""
                   }`}
                 >
-                  {onePageMenu ? <OnePageMenu /> : <MultiMenu />}
+                  <MultiMenu />
                 </div>
               </nav>
               {/* Main Menu End*/}
@@ -89,14 +89,17 @@ const Header1 = ({ onePageMenu }) => {
             {/* Menu Button */}
             <div className="menu-btns d-none d-lg-block">
               {/* menu sidbar */}
-              <div className="menu-sidebar">
+              {/* <div className="menu-sidebar">
                 <button onClick={() => toggleSidebar()}>
                   <img
                     src="assets/images/shape/sidebar-tottler.svg"
                     alt="Toggler"
                   />
                 </button>
-              </div>
+              </div> */}
+              <Link legacyBehavior href="contact">
+                <a className="theme-btn">Contact Me</a>
+              </Link>
             </div>
           </div>
         </div>
@@ -106,7 +109,7 @@ const Header1 = ({ onePageMenu }) => {
   );
 };
 
-const Header2 = ({ onePageMenu }) => {
+const Header2 = () => {
   useEffect(() => {
     utils.stickyNav();
   }, []);
@@ -169,36 +172,7 @@ const Header2 = ({ onePageMenu }) => {
                     toggle ? "show" : ""
                   }`}
                 >
-                  {onePageMenu ? (
-                    <ul className="navigation onepage clearfix">
-                      <li>
-                        <a href="#home">Home</a>
-                      </li>
-                      <li>
-                        <a href="#about">about</a>
-                      </li>
-                      <li>
-                        <a href="#resume">Resume</a>
-                      </li>
-                      <li>
-                        <a href="#services">services</a>
-                      </li>
-                      <li>
-                        <a href="#skills">skills</a>
-                      </li>
-                      <li>
-                        <a href="#projects">projects</a>
-                      </li>
-                      <li>
-                        <a href="#blog">blog</a>
-                      </li>
-                      <li>
-                        <a href="#contact">Contact</a>
-                      </li>
-                    </ul>
-                  ) : (
                     <MultiMenu />
-                  )}
                 </div>
               </nav>
               {/* Main Menu End*/}

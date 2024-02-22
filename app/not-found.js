@@ -15,8 +15,8 @@ const E404 = () => {
               <img src="assets/images/shape/404-error.png" alt="Error" />
             </div>
             <div className="section-title mb-40 wow fadeInUp delay-0-2s">
-              <h1>OPPS!</h1>
-              <h2>This Page Are Can't be Found</h2>
+              <h1>Oops!</h1>
+              <h2>This Page Can't be Found</h2>
             </div>
             <Link legacyBehavior href="/">
               <a className="theme-btn wow fadeInUp delay-0-2s">
@@ -24,18 +24,6 @@ const E404 = () => {
               </a>
             </Link>
           </div>
-        </div>
-        <div className="bg-lines">
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
         </div>
       </section>
     </Layout>

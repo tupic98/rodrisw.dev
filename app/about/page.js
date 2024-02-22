@@ -91,18 +91,6 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="bg-lines">
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-        </div>
       </section>
       {/* About Page Area end */}
       {/* Services Area start */}
@@ -135,18 +123,6 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="bg-lines">
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
         </div>
       </section>
       {/* FAQs Area end */}

@@ -11,19 +11,21 @@ const Contact = () => {
               <div className="section-title mb-40">
                 <span className="sub-title mb-15">Get In Touch</span>
                 <h2>
-                  Let’s Talk For your <span>Next Projects</span>
+                   Let's <span>Work Together</span>
                 </h2>
                 <p>
-                  Sed ut perspiciatis unde omnin natus totam rem aperiam eaque
-                  inventore veritatis
+                  <span className="fs-4">
+                    <i className="far fa-envelope pe-2" />
+                    <a href="mailto:raalvarenga@rodrisw.dev" >raalvarenga@rodrisw.dev</a>
+                  </span>
+                  <br></br>
+                  <br></br>
+                  <span className="fs-4">
+                    <i className="fab fa-linkedin pe-2" />
+                    <a href="https://www.linkedin.com/in/rodrigo-alvarenga-928b7a190/" rel="noopener noreferrer" target="_blank">Linked In</a>
+                  </span>
                 </p>
               </div>
-              <ul className="list-style-two">
-                <li>5+ Years Of Experience</li>
-                <li>Professional Web Designer</li>
-                <li>Mobile Apps Design</li>
-                <li>Custom Design Support</li>
-              </ul>
             </div>
           </div>
           <div className="col-lg-8">
@@ -131,7 +133,7 @@ const Contact = () => {
                   <div className="col-md-12">
                     <div className="form-group mb-0">
                       <button type="submit" className="theme-btn">
-                        Send Us Message <i className="far fa-angle-right" />
+                        Send Me A Message <i className="far fa-angle-right" />
                       </button>
                       <div id="msgSubmit" className="hidden" />
                     </div>
@@ -141,18 +143,6 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="bg-lines">
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
       </div>
     </section>
   );

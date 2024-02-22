@@ -1,6 +1,8 @@
 import { DM_Sans, Inter } from "next/font/google";
 
 import Preloader from "@/layout/Preloader";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "@css/animate.min.css";
 import "@css/bootstrap.min.css";
 import "@css/flaticon.min.css";
@@ -44,6 +46,8 @@ export default function RootLayout({ children }) {
       <body>
         <Preloader />
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

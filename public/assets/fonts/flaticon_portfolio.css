@@ -1,10 +1,10 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "flaticon_noxfolio";
-  src: url("./flaticon_noxfolio.ttf?943527ded4c907448c49887765f842d3") format("truetype"), url("./flaticon_noxfolio.woff?943527ded4c907448c49887765f842d3") format("woff"), url("./flaticon_noxfolio.woff2?943527ded4c907448c49887765f842d3") format("woff2"), url("./flaticon_noxfolio.eot?943527ded4c907448c49887765f842d3#iefix") format("embedded-opentype"), url("./flaticon_noxfolio.svg?943527ded4c907448c49887765f842d3#flaticon_noxfolio") format("svg"); }
+  font-family: "flaticon_portfolio";
+  src: url("./flaticon_portfolio.ttf?943527ded4c907448c49887765f842d3") format("truetype"), url("./flaticon_portfolio.woff?943527ded4c907448c49887765f842d3") format("woff"), url("./flaticon_portfolio.woff2?943527ded4c907448c49887765f842d3") format("woff2"), url("./flaticon_portfolio.eot?943527ded4c907448c49887765f842d3#iefix") format("embedded-opentype"), url("./flaticon_portfolio.svg?943527ded4c907448c49887765f842d3#flaticon_portfolio") format("svg"); }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
-  font-family: flaticon_noxfolio !important;
+  font-family: flaticon_portfolio !important;
   font-style: normal;
   font-weight: normal !important;
   font-variant: normal;

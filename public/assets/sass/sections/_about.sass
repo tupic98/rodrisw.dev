@@ -3,9 +3,15 @@
 /*******************************************************/
 .about-content-part
     .section-title
+        text-align: center
         p
-            max-width: 620px
-    
+            font-size: 1.1rem
+            color: $white-color
+            span
+                color: $accent-color
+            +res-ab(lg)
+                padding: 0 90px
+            
 .about-image-part
     padding-left: 40px
     position: relative
@@ -20,11 +26,8 @@
 .about-info-box
     display: flex
     flex-wrap: wrap
-    max-width: 580px
-    border-radius: 20px
+    max-width: fit-content
     padding: 16px 40px 2px
-    background: $lighter-color
-    border: 1px solid $border-color
     +res-bl(xs)
         +gapLR(padding, 25px)
     .info-box-item
@@ -35,10 +38,14 @@
 .info-box-item
     display: flex
     align-items: center
-    > i
-        margin-right: 15px
-        color: $black-color
-        +circle($primary-color, 40px)
+    > a
+        > i
+            margin-right: 15px
+            color: $white-color
+            font-size: 1.75rem
+        &:hover
+            > i
+                color: $primary-color
     .content
         line-height: 1.5
         span

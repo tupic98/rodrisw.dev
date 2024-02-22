@@ -62,9 +62,9 @@
         
 /* Resume Box style */
 .resume-area-two
-    clip-path: polygon(50% 0%, 100% 65px, 100% 100%, 0 100%, 0 65px)
-    +res-bl(lg)
-        clip-path: polygon(50% 0%, 100% 35px, 100% 100%, 0 100%, 0 35px)
+    // clip-path: polygon(50% 0%, 100% 65px, 100% 100%, 0 100%, 0 65px)
+    // +res-bl(lg)
+    //     clip-path: polygon(50% 0%, 100% 35px, 100% 100%, 0 100%, 0 35px)
 
 .resume-box
     padding: 60px
@@ -74,6 +74,8 @@
     +res-bl(sm)
         display: block
         padding-bottom: 25px
+        padding-right: 25px
+        padding-left: 25px
     +res-bl(xs)
         +gapLR(padding, 35px)
     .timeline-item
@@ -105,6 +107,10 @@
         +res-bl(sm)
             margin-bottom: 35px !important
     .resume-column
+        +res-ab(ms)
+            padding-right: 20px
+        +res-ab(md)
+            padding-right: 50px
         &:not(:first-child)
             order: 2
     .resume-line
@@ -136,7 +142,7 @@
     .title
         color: white
         line-height: 1
-        font-size: 115px
+        font-size: 2rem
         font-weight: 500
         padding: 22px 75px
         border-radius: 80px

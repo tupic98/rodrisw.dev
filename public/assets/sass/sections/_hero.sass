@@ -107,11 +107,16 @@
 
     .scroll-down
         z-index: 3
-        +poLB(50%, 0)
+        +poLB(50%, 22%)
         max-width: 22%
         transform: translate(-50%, 50%)
 
 .hero-two-content
+    min-height: 450px
+    +res-ab(md)
+        min-height: 600px
+    +res-ab(lg)
+        min-height: 700px
     span
         display: block
         font-weight: 700
@@ -124,7 +129,7 @@
     .title
         z-index: 5
         color: white
-        font-size: 200px
+        font-size: 7rem
         line-height: 0.9em
         position: relative
         margin-left: -13px
@@ -136,26 +141,32 @@
             margin-left: 10%
             font-size: 0.45em
             color: $primary-color
-    .name
+    .name-wrapper
+        display: inline-flex
         z-index: 5
         color: white
-        +poRT(0, 40%)
+        +poRT(0, 20%)
         line-height: 1
-        font-size: 90px
-        text-decoration: underline
-        text-underline-offset: 13px
-        text-decoration-thickness: 4px
+        font-size: 3.5rem
+        .name
+            text-decoration: underline
+            text-underline-offset: 13px
+            text-decoration-thickness: 4px
+            +res-bl(lg)
+                text-underline-offset: 8px
+                text-decoration-thickness: 2px
         +res-bl(lg)
             font-size: 5vw
-            text-underline-offset: 8px
-            text-decoration-thickness: 2px
+        .intro
+            color: $primary-color
+            text-decoration: none !important
     .designations
         z-index: 5
-        +poLB(0, 25%)
+        +poLT(0, 35%)
         color: white
         display: flex
         line-height: 1
-        font-size: 90px
+        font-size: 4rem
         padding: 15px 35px
         border-radius: 60px
         backdrop-filter: blur(20px)

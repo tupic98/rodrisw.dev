@@ -1,0 +1,53 @@
+$flaticon_portfolio-font: "flaticon_portfolio";
+
+@font-face {
+    font-family: $flaticon_portfolio-font;
+    src: url("./flaticon_portfolio.ttf?943527ded4c907448c49887765f842d3") format("truetype"),
+url("./flaticon_portfolio.woff?943527ded4c907448c49887765f842d3") format("woff"),
+url("./flaticon_portfolio.woff2?943527ded4c907448c49887765f842d3") format("woff2"),
+url("./flaticon_portfolio.eot?943527ded4c907448c49887765f842d3#iefix") format("embedded-opentype"),
+url("./flaticon_portfolio.svg?943527ded4c907448c49887765f842d3#flaticon_portfolio") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_portfolio !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_portfolio-map: (
+    "asterisk": "\f101",
+    "sun": "\f102",
+    "star": "\f103",
+    "asterisk-1": "\f104",
+    "call": "\f105",
+    "waning-moon": "\f106",
+    "moon": "\f107",
+);
+
+.flaticon-asterisk:before {
+    content: map-get($flaticon_portfolio-map, "asterisk");
+}
+.flaticon-sun:before {
+    content: map-get($flaticon_portfolio-map, "sun");
+}
+.flaticon-star:before {
+    content: map-get($flaticon_portfolio-map, "star");
+}
+.flaticon-asterisk-1:before {
+    content: map-get($flaticon_portfolio-map, "asterisk-1");
+}
+.flaticon-call:before {
+    content: map-get($flaticon_portfolio-map, "call");
+}
+.flaticon-waning-moon:before {
+    content: map-get($flaticon_portfolio-map, "waning-moon");
+}
+.flaticon-moon:before {
+    content: map-get($flaticon_portfolio-map, "moon");
+}

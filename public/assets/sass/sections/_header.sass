@@ -160,7 +160,7 @@
                     line-height: 43px
             a
                 opacity: 1
-                display: block
+                display: inline-block
                 font-weight: 500
                 position: relative
                 color: $heading-color
@@ -173,16 +173,26 @@
                 &:after
                     +res-ab(lg)
                         content: ''
-                        opacity: 0
-                        +poLT(0, 115%)
-                        transition: 0.5s
-                        +size(25px, 2px)
+                        transform: scaleX(0)
+                        +poLB(0, 0)
+                        transition: transform 0.25s ease-out
+                        +size(100%, 1px)
                         background: $primary-color
                 &:hover
                     color: $primary-color
-                    text-decoration: underline
                     &:after
-                        opacity: 1
+                        transform: scaleX(1)
+                        transform-origin: bottom left
+                
+                &.active
+                    color: $primary-color
+                    &:after
+                        +res-ab(lg)
+                            content: ''
+                            transform: scaleX(1)
+                            +poLB(0, 0)
+                            +size(100%, 1px)
+                            background: $primary-color
             &.current > a, &.current-menu-item > a
                 font-weight: 500
             li

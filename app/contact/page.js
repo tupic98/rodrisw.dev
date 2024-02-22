@@ -21,8 +21,6 @@ const page = () => {
                     Let's <span>Work Together</span>
                   </h2>
                   <p>
-                    Sed ut perspiciatis unde omnin natus totam rem aperiam eaque
-                    inventore veritatis
                   </p>
                 </div>
                 <h6>Contact Information</h6>
@@ -36,10 +34,6 @@ const page = () => {
                     <li>
                       <i className="far fa-envelope" />{" "}
                       <a href="mailto:raalvarenga@rodrisw.dev">raalvarenga@rodrisw.dev</a>
-                    </li>
-                    <li>
-                      <i className="far fa-phone" />{" "}
-                      <a href="callto:+19512617814">+1 (951) 261-7814</a>
                     </li>
                   </ul>
                 </div>

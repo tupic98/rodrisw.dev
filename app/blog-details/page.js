@@ -31,18 +31,6 @@ const BlogDetails = () => {
             </nav>
           </div>
         </div>
-        <div className="bg-lines">
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-        </div>
       </section>
       {/* Page Banner End */}
       {/* Blog Details Area start */}
@@ -368,18 +356,6 @@ const BlogDetails = () => {
               <BlogSidebar />
             </div>
           </div>
-        </div>
-        <div className="bg-lines">
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
         </div>
       </section>
     </Layout>

@@ -155,18 +155,6 @@ const ProjectDetails = () => {
             </div>
           </div>
         </div>
-        <div className="bg-lines">
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-        </div>
       </section>
       {/* Project Details Area end */}
       {/* Related Projects Area start */}
@@ -235,18 +223,6 @@ const ProjectDetails = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="bg-lines">
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
         </div>
       </section>
     </Layout>

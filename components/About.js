@@ -1,4 +1,5 @@
 import Counter from "./Counter";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -6,79 +7,55 @@ const About = () => {
       <div className="for-bgc-black py-130 rpy-100">
         <div className="container">
           <div className="row gap-100 align-items-center">
-            <div className="col-lg-7">
+            <div className="col-lg-12">
               <div className="about-content-part rel z-2 rmb-55">
                 <div className="section-title mb-35 wow fadeInUp delay-0-2s">
-                  <span className="sub-title mb-15">About Me</span>
+                  <span className="sub-title mb-15">About me</span>
                   <h2>
-                    Professional <span>Problem Solutions</span> For Digital
-                    Products
+                    FrontEnd & Software <span>Developer</span>
                   </h2>
                   <p>
-                    At vero eos et accusamus etodio dignissimos ducimus
-                    praesentium voluptatum corrupti quos dolores quas molestias
-                    excepturi sint occaecati cupiditate provident qui officia
-                    deserunt mollitia animi, id est laborum et dolorum
+                    I'm a passionate Software Developer with over 3 years experience specializing in front-end development. I have a passion
+                    for creating seamless, performant, pixel-perfect and responsive websites and a firm believer in the mobile-first approach. I consider myself dedicated, results-driven and equipped
+                    with a <span>diverse skill set</span> ranging from SEO, front-end development, back-end development, a little bit of networking, 
+                    automation and data analysis with python.
                   </p>
+                  <p>
+                    My main focus lately is in building software and deliver <span>professional solutions</span>. I love working on the front-end and being
+                    able to develop an excelent UI and user experience, but I started focusing not only coding but also delivering <span>value</span> to the business needs
+                    and building professional solutions to real problems.
+                  </p>
+                  <p>
+                    I recently developed a passion for photography, so when I'm not behind my screen delivering software solutions, I find myself learning about
+                    photography, composition, color grading and also film photography.
+                  </p> 
                 </div>
-                <ul className="list-style-one two-column wow fadeInUp delay-0-2s">
-                  <li>Branding &amp; Design</li>
-                  <li>Digital Marketing</li>
-                  <li>Web Development</li>
-                  <li>Product Design</li>
-                </ul>
                 <div className="about-info-box mt-25 wow fadeInUp delay-0-2s">
                   <div className="info-box-item">
-                    <i className="far fa-envelope" />
+                    <a href="https://github.com/tupic98" rel="noopener noreferrer" target="_blank">
+                      <i className="fab fa-github" />
+                    </a>
                     <div className="content">
-                      <span>Email Us</span>
+                      <span>Github</span>
                       <br />
-                      <a href="mailto:support@gmail.com">support@gmail.com</a>
+                      <a href="https://github.com/tupic98" rel="noopener noreferrer" target="_blank">https://github.com/tupic98</a>
                     </div>
                   </div>
                   <div className="info-box-item">
-                    <i className="far fa-phone" />
+                    <a href="https://www.linkedin.com/in/rodrigo-alvarenga-928b7a190/" rel="noopener noreferrer" target="_blank">
+                      <i className="fab fa-linkedin" />
+                    </a>
                     <div className="content">
-                      <span>Make A Call</span>
+                      <span>LinkedIn</span>
                       <br />
-                      <a href="callto:+000(123)45688">+880 (123) 456 88</a>
+                      <a href="https://www.linkedin.com/in/rodrigo-alvarenga-928b7a190/" rel="noopener noreferrer" target="_blank">Rodrigo Alvarenga</a>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-5">
-              <div className="about-image-part wow fadeInUp delay-0-3s">
-                <img src="assets/images/about/about.jpg" alt="About Me" />
-                <div className="about-btn btn-one wow fadeInRight delay-0-4s">
-                  <img src="assets/images/about/btn-image1.png" alt="Image" />
-                  <h6>Experience Designer</h6>
-                  <i className="fas fa-arrow-right" />
-                </div>
-                <div className="about-btn btn-two wow fadeInRight delay-0-5s">
-                  <img src="assets/images/about/btn-image2.png" alt="Image" />
-                  <h6>Mark J. Collins</h6>
-                  <i className="fas fa-arrow-right" />
-                </div>
-                <div className="dot-shape">
-                  <img src="assets/images/shape/about-dot.png" alt="Shape" />
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="bg-lines">
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
       </div>
     </section>
   );

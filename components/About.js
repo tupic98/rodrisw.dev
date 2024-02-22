@@ -27,7 +27,7 @@ const About = () => {
                   </p>
                   <p>
                     I recently developed a passion for photography, so when I'm not behind my screen delivering software solutions, I find myself learning about
-                    photography, composition, color grading and also film photography.
+                    photography, composition, color grading and also film photography. <span>Latin</span> originally from <span>El Salvador</span>, I now reside in the US, bringing a unique cultural perspective to my work.
                   </p> 
                 </div>
                 <div className="about-info-box mt-25 wow fadeInUp delay-0-2s">

@@ -299,18 +299,6 @@ const BlogPage = () => {
             </div>
           </div>
         </div>
-        <div className="bg-lines">
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-        </div>
       </section>
     </Layout>
   );

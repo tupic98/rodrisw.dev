@@ -35,9 +35,9 @@ export const metadata = {
     template:
       "Rodrigo Alvarnega - Frontend Developer | %s",
     default:
-      "Rodrigo Alvarenga - Frontend Developer || Home", // a default is required when creating a template
+      "Rodrigo Alvarenga - Frontend Developer | Home", // a default is required when creating a template
   },
-  description: "I'm a passionate Software Developer with over 3 years experience specializing in front-end development. I have a passion for creating seamless, performant, pixel-perfect and responsive websites and a firm believer in the mobile-first approach."
+  description: "Dedicated Software Developer with over 3 years of experience in FrontEnd Development, creating seamless, pixel-perfect, and responsive websites, prioritizing performance to deliver business solutions effectively."
 };
 
 export default function RootLayout({ children }) {

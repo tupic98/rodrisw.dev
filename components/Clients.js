@@ -97,18 +97,6 @@ const Clients = () => {
           </Link>
         </div>
       </div>
-      <div className="bg-lines">
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-      </div>
     </div>
   );
 };
@@ -170,18 +158,6 @@ export const Clients2 = () => {
             />
           </Link>
         </div>
-      </div>
-      <div className="bg-lines">
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
       </div>
     </div>
   );

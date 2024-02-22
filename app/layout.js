@@ -31,11 +31,11 @@ const fontFamily = `${inter.variable} ${dm_sans.variable} `;
 export const metadata = {
   title: {
     template:
-      "Rodrigo Alvarnega - Web Designer & Software Developer|| %s",
+      "Rodrigo Alvarnega - Frontend Developer | %s",
     default:
-      "Rodrigo Alvarenga - Web Designer & Software Developer || Home", // a default is required when creating a template
+      "Rodrigo Alvarenga - Frontend Developer || Home", // a default is required when creating a template
   },
-  description: "Step into a world of digital creativity with Rodrigo Alvarenga. As a experienced web designer and software developer, I specialize in transforming ideas into pixel-perfect realities. Let's collaborate to shape the future of your online presence together.",
+  description: "I'm a passionate Software Developer with over 3 years experience specializing in front-end development. I have a passion for creating seamless, performant, pixel-perfect and responsive websites and a firm believer in the mobile-first approach."
 };
 
 export default function RootLayout({ children }) {

@@ -14,7 +14,7 @@ import Layout from "@/layout/Layout";
 
 const Index2 = () => {
   return (
-    <Layout header={2} footer={2} onePageMenu={true}>
+    <Layout header={2} footer={2}>
       {/*End Hidden Sidebar */}
       {/* Hero Section Start */}
       <Hero2 />
@@ -391,18 +391,6 @@ const Index2 = () => {
               </span>
             </span>
           </span>
-        </div>
-        <div className="bg-lines">
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
         </div>
       </div>
       {/* Headline Area end */}

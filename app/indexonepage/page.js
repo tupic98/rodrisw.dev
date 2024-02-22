@@ -13,7 +13,7 @@ import Layout from "@/layout/Layout";
 
 export default function HomeOnePage() {
   return (
-    <Layout onePageMenu={true}>
+    <Layout>
       {/* Hero Section Start */}
       <Hero />
       {/* Hero Section End */}

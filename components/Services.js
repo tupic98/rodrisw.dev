@@ -70,18 +70,6 @@ const Services = ({ extraClass }) => {
           ))}
         </div>
       </div>
-      <div className="bg-lines">
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-      </div>
     </section>
   );
 };

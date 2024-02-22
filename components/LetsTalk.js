@@ -10,18 +10,6 @@ const LetsTalk = () => {
           </a>
         </Link>
       </div>
-      <div className="bg-lines">
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-      </div>
     </div>
   );
 };

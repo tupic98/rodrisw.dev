@@ -106,18 +106,6 @@ const Pricing = ({ extraClass }) => {
           </div>
         </div>
       </div>
-      <div className="bg-lines">
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-      </div>
     </section>
   );
 };
@@ -370,18 +358,6 @@ export const Pricing2 = () => {
             </Tab.Pane>
           </Tab.Content>
         </Tab.Container>
-      </div>
-      <div className="bg-lines">
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
       </div>
     </section>
   );

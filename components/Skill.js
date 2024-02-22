@@ -3,51 +3,63 @@ import Link from "next/link";
 const items = [
   {
     id: 1,
-    name: "Figma",
-    image: "assets/images/skills/skill1.png",
-    value: "95",
+    name: "Vue.js",
+    image: "assets/images/skills/vue.png",
   },
   {
     id: 2,
-    name: "Framer",
-    image: "assets/images/skills/skill2.png",
-    value: "83",
+    name: "Nuxt.js",
+    image: "assets/images/skills/nuxt.png",
   },
   {
     id: 3,
-    name: "Photoshop",
-    image: "assets/images/skills/skill3.png",
-    value: "93",
+    name: "React",
+    image: "assets/images/skills/react.png",
   },
   {
     id: 4,
     name: "Wordpress",
-    image: "assets/images/skills/skill4.png",
-    value: "84",
+    image: "assets/images/skills/wordpress.png",
   },
   {
     id: 5,
-    name: "Angular",
-    image: "assets/images/skills/skill5.png",
-    value: "65",
+    name: "Shopify",
+    image: "assets/images/skills/shopify.png",
   },
   {
     id: 6,
-    name: "Webflow",
-    image: "assets/images/skills/skill6.png",
-    value: "86",
+    name: "TailwindCSS",
+    image: "assets/images/skills/tailwind.png",
   },
   {
     id: 7,
     name: "Python",
-    image: "assets/images/skills/skill7.png",
-    value: "62",
+    image: "assets/images/skills/python.png",
   },
   {
     id: 8,
-    name: "Sketch",
-    image: "assets/images/skills/skill8.png",
-    value: "94",
+    name: "Photoshop",
+    image: "assets/images/skills/photoshop.png",
+  },
+  {
+    id: 9,
+    name: "Supabase",
+    image: "assets/images/skills/supabase.png",
+  },
+  {
+    id: 10,
+    name: "PostgreSQL",
+    image: "assets/images/skills/postgres.png",
+  },
+  {
+    id: 11,
+    name: "Docker",
+    image: "assets/images/skills/docker.png",
+  },
+  {
+    id: 12,
+    name: "Node.js",
+    image: "assets/images/skills/node.png",
   },
 ];
 
@@ -60,32 +72,23 @@ const Skill = () => {
             <div className="col-lg-5">
               <div className="skill-content-part rel z-2 rmb-55 wow fadeInUp delay-0-2s">
                 <div className="section-title mb-40">
-                  <span className="sub-title mb-15">My Skills</span>
                   <h2>
-                    Let’s Explore Popular <span>Skills &amp; Experience</span>
+                    My <span>Skills </span>
                   </h2>
                   <p>
-                    Sed ut perspiciatis unde omnis iste natus to voluptatem
-                    accusantium doloremque laudantium, totam rem aperiamc eaque
-                    ipsa quae ab illo inventore veritatis
+                    Just a list of some of the skills and technologies I've worked with on my professional life.
                   </p>
                 </div>
-                <Link legacyBehavior href="/about">
-                  <a className="theme-btn">
-                    Learn More <i className="far fa-angle-right" />
-                  </a>
-                </Link>
               </div>
             </div>
             <div className="col-lg-7">
               <div className="skill-items-wrap">
                 <div className="row">
                   {items.map((item) => (
-                    <div className="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
+                    <div className="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6" key={item.name}>
                       <div className="skill-item wow fadeInUp delay-0-2s">
                         <img src={item.image} alt="Skill" />
                         <h5>{item.name}</h5>
-                        <span className="percent">{item.value}%</span>
                       </div>
                     </div>
                   ))}
@@ -94,18 +97,6 @@ const Skill = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="bg-lines">
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
       </div>
     </section>
   );
@@ -159,18 +150,6 @@ export const Skill2 = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="bg-lines">
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
       </div>
     </section>
   );

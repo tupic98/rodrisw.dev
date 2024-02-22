@@ -18,7 +18,7 @@ const page = () => {
                 <div className="section-title mb-30">
                   <span className="sub-title mb-15">Get In Touch</span>
                   <h2>
-                    Let’s Talk For your <span>Next Projects</span>
+                    Let's <span>Work Together</span>
                   </h2>
                   <p>
                     Sed ut perspiciatis unde omnin natus totam rem aperiam eaque
@@ -192,18 +192,6 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="bg-lines">
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-        </div>
     </Layout>
   );
 };

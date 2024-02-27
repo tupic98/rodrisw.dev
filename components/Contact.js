@@ -1,4 +1,39 @@
+"use client"
+
+import { useState } from "react";
+import emailjs from '@emailjs/browser';
+
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [stateMessage, setStateMessage] = useState(null);
+
+  const sendEmail = (e) => {
+    e.persist();
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    emailjs.sendForm(
+      process.env.SERVICE_ID,
+      process.env.TEMPLATE_ID,
+      e.target,
+      process.env.EMAILJS_PUBLIC_KEY
+    ).then((result) => {
+      setStateMessage('Thanks for contacting me! I\'ll get back to you shortly.');
+      setIsSubmitting(false);
+      setTimeout(() => {
+        setStateMessage(null);
+      }, 7500); // hide message after 5 seconds
+    }, (error) => {
+      setStateMessage('Something went wrong, please try again later');
+      setIsSubmitting(false);
+      setTimeout(() => {
+        setStateMessage(null);
+      }, 6000); // hide message after 5 seconds
+    });
+
+    e.target.reset();
+  }
+
   return (
     <section
       id="contact"
@@ -34,24 +69,24 @@ const Contact = () => {
                 id="contactForm"
                 className="contactForm"
                 name="contactForm"
-                action="assets/php/form-process.php"
                 method="post"
+                onSubmit={sendEmail}
               >
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
-                      <label htmlFor="name">Full Name</label>
+                      <label htmlFor="from_name">Full Name</label>
                       <input
                         type="text"
                         id="name"
-                        name="name"
+                        name="from_name"
                         className="form-control"
                         defaultValue=""
-                        placeholder="Richard D. Hammond"
-                        required=""
+                        placeholder="Your Name"
+                        required
                         data-error="Please enter your Name"
                       />
-                      <label htmlFor="name" className="for-icon">
+                      <label htmlFor="from_name" className="for-icon">
                         <i className="far fa-user" />
                       </label>
                       <div className="help-block with-errors" />
@@ -59,18 +94,18 @@ const Contact = () => {
                   </div>
                   <div className="col-md-6">
                     <div className="form-group">
-                      <label htmlFor="email">Email Address</label>
+                      <label htmlFor="from_email">Email Address</label>
                       <input
                         type="email"
                         id="email"
-                        name="email"
+                        name="from_email"
                         className="form-control"
                         defaultValue=""
-                        placeholder="support@gmail.com"
-                        required=""
+                        placeholder="youremail@gmail.com"
+                        required
                         data-error="Please enter your Email"
                       />
-                      <label htmlFor="email" className="for-icon">
+                      <label htmlFor="from_email" className="for-icon">
                         <i className="far fa-envelope" />
                       </label>
                       <div className="help-block with-errors" />
@@ -78,18 +113,16 @@ const Contact = () => {
                   </div>
                   <div className="col-md-6">
                     <div className="form-group">
-                      <label htmlFor="phone_number">Phone Number</label>
+                      <label htmlFor="from_number">Phone Number</label>
                       <input
                         type="text"
                         id="phone_number"
-                        name="phone_number"
+                        name="from_number"
                         className="form-control"
                         defaultValue=""
                         placeholder="+880 (123) 456 88"
-                        required=""
-                        data-error="Please enter your Phone Number"
                       />
-                      <label htmlFor="phone_number" className="for-icon">
+                      <label htmlFor="from_number" className="for-icon">
                         <i className="far fa-phone" />
                       </label>
                       <div className="help-block with-errors" />
@@ -105,8 +138,6 @@ const Contact = () => {
                         className="form-control"
                         defaultValue=""
                         placeholder="Subject"
-                        required=""
-                        data-error="Please enter your Subject"
                       />
                       <label htmlFor="subject" className="for-icon">
                         <i className="far fa-text" />
@@ -122,17 +153,18 @@ const Contact = () => {
                         id="message"
                         className="form-control"
                         rows={4}
-                        placeholder="write message"
-                        required=""
+                        placeholder="Write a message, any inquiry or question."
+                        required
                         data-error="Please enter your Message"
                         defaultValue={""}
                       />
                       <div className="help-block with-errors" />
                     </div>
                   </div>
+                  <span className="contact-message">{stateMessage}</span>
                   <div className="col-md-12">
                     <div className="form-group mb-0">
-                      <button type="submit" className="theme-btn">
+                      <button type="submit" className="theme-btn" disabled={isSubmitting}>
                         Send Me A Message <i className="far fa-angle-right" />
                       </button>
                       <div id="msgSubmit" className="hidden" />

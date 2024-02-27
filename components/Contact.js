@@ -13,10 +13,10 @@ const Contact = () => {
     setIsSubmitting(true);
 
     emailjs.sendForm(
-      process.env.SERVICE_ID,
-      process.env.TEMPLATE_ID,
+      process.env.NEXT_PUBLIC_SERVICE_ID,
+      process.env.NEXT_PUBLIC_TEMPLATE_ID,
       e.target,
-      process.env.EMAILJS_PUBLIC_KEY
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
     ).then((result) => {
       setStateMessage('Thanks for contacting me! I\'ll get back to you shortly.');
       setIsSubmitting(false);
@@ -29,9 +29,15 @@ const Contact = () => {
       setTimeout(() => {
         setStateMessage(null);
       }, 6000); // hide message after 5 seconds
+    }).catch((error) => {
+      setStateMessage('Something went wrong, please try again later');
+      setIsSubmitting(false);
+      setTimeout(() => {
+        setStateMessage(null);
+      }, 6000); // hide message after 5 seconds
+    }).finally(() => {
+      e.target.reset();
     });
-
-    e.target.reset();
   }
 
   return (

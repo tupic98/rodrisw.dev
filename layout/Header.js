@@ -97,7 +97,7 @@ const Header1 = () => {
                   />
                 </button>
               </div> */}
-              <a href="/assets/RodrigoAlvarenga_Resume.pdf" className="me-4 resume-link" rel="noopener noreferrer" target="_blank">
+              <a href="/assets/RodrigoAlvarenga_Resume.pdf" className="me-4 resume-link-header" rel="noopener noreferrer" target="_blank">
                 View My Resume <i className="far fa-arrow-right"></i>
               </a>
               <Link legacyBehavior href="contact">

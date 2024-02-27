@@ -120,7 +120,11 @@ export const Resume2 = () => {
               <h2>Work &amp; Education</h2>
             </div>
           </div>
+            <a href="/assets/RodrigoAlvarenga_Resume.pdf" className="me-4 resume-link" rel="noopener noreferrer" target="_blank">
+              View My Resume <i className="far fa-arrow-right"></i>
+            </a>
           <div className="col-lg-4 text-lg-end">
+
             <Link legacyBehavior href="/contact">
               <a className="theme-btn mb-35">Contact Me</a>
             </Link>
